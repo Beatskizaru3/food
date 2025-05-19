@@ -1,0 +1,45 @@
+.header{
+    
+    &__inner{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+
+    &__navigation{
+        display: flex;
+        align-items: center;
+        column-gap: 22px;
+        &:last-child{
+            column-gap: 50px;
+        }
+        
+    }
+
+    &__list{
+        display: flex;
+        column-gap: 20px;
+    }
+
+
+    &__item{
+
+        &:last-child{
+            position: relative;
+            margin-right: 15px;
+            &::after{
+                content: '';
+                position: absolute; 
+                top: 0; 
+                right: -15px; 
+                width: 1px; 
+                height: 100%; 
+                background: #000;
+            }
+        }
+       
+    }
+}
