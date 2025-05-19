@@ -244,7 +244,13 @@ body {
   margin: auto;
 }
 
+.header {
+  min-height: 800px;
+  height: auto;
+  background: url("/images/heroimage.png") no-repeat center/cover;
+}
 .header__inner {
+  padding-top: 5vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,6 +273,12 @@ body {
   -webkit-column-gap: 22px;
      -moz-column-gap: 22px;
           column-gap: 22px;
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .header__navigation:last-child {
   -webkit-column-gap: 50px;
@@ -280,6 +292,7 @@ body {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+  text-transform: uppercase;
 }
 .header__item:last-child {
   position: relative;
@@ -292,5 +305,61 @@ body {
   right: -15px;
   width: 1px;
   height: 100%;
-  background: #000;
+  background: #FFF;
+}
+.header__link {
+  text-decoration: none;
+  color: #FFF;
+}
+.header__contacts {
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header__contacts-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header__contacts-phone::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/images/svg/phone-call-svgrepo-com.svg") no-repeat center;
+  background-size: contain;
+}
+.header__contacts-text {
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header__button {
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  max-width: 157px;
+  max-height: 47px;
+  padding: 5px 10px;
+  background-color: #FF7400;
 }

@@ -1,6 +1,11 @@
 .header{
     
+    min-height: 800px;
+    height: auto;
+    background: url('/images/heroimage.png') no-repeat center/cover;
+
     &__inner{
+        padding-top: 5vh;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -13,6 +18,13 @@
         display: flex;
         align-items: center;
         column-gap: 22px;
+
+        color: #FFF;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
         &:last-child{
             column-gap: 50px;
         }
@@ -22,6 +34,8 @@
     &__list{
         display: flex;
         column-gap: 20px;
+        
+        text-transform: uppercase;
     }
 
 
@@ -37,9 +51,65 @@
                 right: -15px; 
                 width: 1px; 
                 height: 100%; 
-                background: #000;
+                background: #FFF;
             }
         }
-       
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    &__contacts{
+        color: #FFF;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        &-phone{
+            display: flex;
+            position: relative;
+            font-size: 18px;
+            font-weight: 700;
+            &::before{
+                display: flex;
+                align-items: center;
+                content: '';
+                display: inline-block; // обязательно
+                width: 16px;            // укажи нужную ширину
+                height: 16px;           // и высоту
+                background: url('/images/svg/phone-call-svgrepo-com.svg') no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        &-text{
+            color: #FFF;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &__button{
+        color: #FFF;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        letter-spacing: 1;
+        
+        max-width: 157px;
+        max-height: 47px;
+        
+        padding: 5px 10px;
+        background-color: #FF7400;;
     }
 }
