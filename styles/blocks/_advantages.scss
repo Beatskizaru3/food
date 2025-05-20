@@ -1,0 +1,81 @@
+.advantages{
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-30%);
+
+        @include below-tablet{
+            margin: auto;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 290px;
+            row-gap: 14px;
+        }
+    }
+
+    &__logo{
+        align-self: center;
+        max-width: 100px;
+        max-height: 100px;
+
+    }
+    &__card{
+        width: 350px;
+        height: 328px;
+        @include fluid-card(350, 328, 290, 276);
+        display: flex;
+        flex-direction: column;
+        @include gap-fluid(20, 5);
+        align-items:flex-start;
+        text-align: left;
+
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        @include below-tablet{
+            
+            row-gap: auto;
+            padding: auto;
+        }
+        
+        
+
+        
+        background: #FFF;
+        box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    &__title{
+        color: #2C2C2C;
+        font-family: Tinos;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-self: center;
+        white-space: nowrap;
+
+        max-width: 264px;
+        max-height: 32px;
+        flex-shrink: 0;
+    }
+
+    &__description{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        
+
+        color: #656363;
+        text-align: center;
+        font-family: Tinos;
+        @include fluid-text(26, 22);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.95;
+    }
+
+    
+}
