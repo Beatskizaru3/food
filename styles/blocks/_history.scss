@@ -1,0 +1,216 @@
+.history{
+    min-height: 550px;
+    @media (max-width:942px){
+        min-height: 920px;
+    }
+
+    @include below-tablet{
+        min-height: 920px;
+    }
+    &__inner{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 942px){
+            width: 100%;
+            flex-direction: column;
+            row-gap: 45px;
+            max-width: 290px;
+        }
+        @include below-tablet{
+            
+        }
+    }
+
+    &__body{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__title{
+        color: #000;
+        font-family: Tinos;
+        @include fluid-text(54, 40);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 0.4em;
+        text-align: center;
+
+        @include below-tablet{
+            white-space: break-spaces;
+        }
+
+        &-break{
+            display: inline;
+
+            @include below-tablet{
+                display: block;
+            }
+        }
+    }
+
+    &__description{
+        color: #656363;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        padding-bottom: 4em;
+
+        max-width: 444px;
+        max-height: 217px;
+    }
+
+    &__available{
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @include below-tablet{
+            flex-direction: column;
+            row-gap: 22px;
+        }
+
+        &-dishes{
+
+
+            &-count{
+                color: #BC9060;
+                text-align: center;
+                font-family: "Open Sans";
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            
+            &-category{
+                color: #000;
+                text-align: center;
+                font-family: "Open Sans";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    &__banner{
+        width: 50%;
+
+        &-inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(7%);
+            
+        }
+        @include below-tablet{
+            width: 100%;
+        }
+
+        &-image{
+                
+            
+            &-wrapper{
+                max-height: 500px;
+                position: relative;
+                
+            }
+
+            &--center{
+                max-width: none;
+                width: 255px;
+                height: 430px;
+                flex-shrink: 0;
+                object-fit: cover;
+                z-index: 20;
+                position: absolute;
+
+                left: -70px;
+                @include below-tablet{
+                    width: 137px;
+                    height: 221px;
+                }
+            }
+
+            &--1{
+                position: absolute;
+                max-width: none;
+                width: 233px;
+                height: 300px;
+                
+                @include below-tablet{
+                    width: 125px;
+                    height: 154px;
+                    top: 33px;
+                    left: -166px;
+                }
+
+                flex-shrink: 0;
+                object-fit: cover;
+                z-index: 30;
+                top: 60px;
+                left: -259px;
+            }
+
+            &--2{
+                position: absolute;
+                top: 195px;
+                right: -281px;
+                
+                max-width: none;
+                height: 300px;
+                width: 255px;
+                @include below-tablet{
+                    height: 155px;
+                    width: 137px;
+                    top: 101px;
+                    right: -119px;
+                }
+
+                flex-shrink: 0;
+                object-fit: cover;
+                object-position: bottom;
+                
+                
+                z-index: 30;
+            }
+
+            &--3{
+                position: absolute;
+                z-index: 0;
+                width: 212px;
+                height: 164px;
+                @include below-tablet{
+                    height: 114px;
+                    width: 84px;
+                    top: 15px;
+                    right: -100px;
+                }
+                flex-shrink: 0;
+                top: 49px;
+                right: -220px;
+
+                background: #FFE8D0;
+            }
+        }
+
+
+    }
+    
+}

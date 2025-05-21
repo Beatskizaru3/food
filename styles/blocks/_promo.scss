@@ -1,0 +1,76 @@
+.promo{
+    height: 357px;
+    
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('../../images/promo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__inner{
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        @include below-tablet{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 40px;
+        }
+    }
+
+    &__body{
+       max-width: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+        text-align: center;
+        @include below-tablet{
+            align-items: center;
+        }
+    }
+
+    &__title{
+        color: #D67E34;
+        font-family: Tinos;
+        @include fluid-text(54, 30);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__description{
+        color: #FFF;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__button-wrapper{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    &__button{
+        @include reset-button;
+        color: #FFF;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        
+        
+        max-width: 160px;
+        max-height: 47px;
+        
+        padding: 14px 19px;
+        background-color: #FF7400;
+        white-space: nowrap;
+    }
+}

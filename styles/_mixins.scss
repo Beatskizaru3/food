@@ -9,9 +9,25 @@
     height: auto;
   }
 
-  @mixin fluid-card($maxW,$maxH, $minW, $minH) {
+  @mixin fluid-card($maxH, $maxW, $minW, $minH) {
     width:  clamp(#{$minW}px, #{$maxW / 1440 * 120}vw, #{$maxW}px);
     height: clamp(#{$minH}px, #{$maxH / 1440 * 120}vw, #{$maxH}px);
+  }
+
+  @mixin fluid-width($max, $min, $min-vw: 320px, $max-vw: 1440px) {
+    width: clamp(
+      #{$min}px, 
+      #{$max / 1440 * 120}vw,
+      #{$max}px
+    );
+  }
+
+  @mixin fluid-height($max, $min, $min-vw: 320px, $max-vw: 1440px) {
+    height: clamp(
+      #{$min}px, 
+      #{$max / 1440 * 120}vw,
+      #{$max}px
+    );
   }
 
   @mixin gap-fluid($max, $min){

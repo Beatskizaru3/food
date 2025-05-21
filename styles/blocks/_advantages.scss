@@ -1,10 +1,14 @@
 .advantages{
+    transform: translateY(-25%);
+    position: relative;
+    @include below-tablet{
+        transform: translateY(-10%);
+    }
 
     &__cards{
         display: flex;
         justify-content: space-between;
-        transform: translateY(-30%);
-
+        
         @include below-tablet{
             margin: auto;
             justify-content: center;
