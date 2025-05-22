@@ -126,6 +126,7 @@
     }
 
     &__button{
+        @include reset-button;
         color: #FFF;
         font-family: "Open Sans";
         font-size: 14px;

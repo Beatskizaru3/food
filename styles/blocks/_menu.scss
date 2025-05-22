@@ -1,0 +1,181 @@
+.menu{
+    display: flex;
+    background: url("../images/our-menu.jpg");
+    height: 1030px;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 80px;
+    &__inner{
+        display: flex;
+        
+        flex-direction: column;
+        height: 100%;
+       
+    }
+
+    &__title{
+        color: #FFF;
+        text-align: center;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+        font-family: Tinos;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        
+
+        &-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30%;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    &__hidden{
+        @media (max-width: 1110px){
+            display: none !important; 
+            
+        }
+       
+    }
+    &__item{
+        height: 510px;
+        @include fluid-width(350, 290);
+        display: flex;
+        background-color: #FFF;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        row-gap: 18px;
+
+        position: relative;
+        &:not(.menu__hidden)::after{
+            position: absolute;
+            content: 'Recommended';
+            width: 124px;
+            height: 36px;
+            flex-shrink: 0;
+            background: #D67E34;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+
+            color: #000;
+            
+            font-family: "Open Sans";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+        &-image-food{
+            position: relative;
+        }
+
+        &-circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid transparent; /* рамка */
+            position: relative;
+            z-index: 1;
+
+
+        }
+
+        &-badge{
+            
+                position: absolute;
+                bottom: 20%;
+                right: 15%;
+                transform: translate(50%, 50%);
+                width: 80px;
+                height: 80px;
+                background: #D67E34;
+                color: black;
+                border-radius: 50%;
+                border: 7px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-size: 14px;
+                z-index: 2;
+
+                color: #FFF;
+                font-family: Cookie;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              
+        }
+        &-photo{
+            height: 230px;
+            width: 230px;
+            object-fit: cover;
+            border-radius: 50%;
+            position: relative; // обязательно!
+            z-index: 1;
+
+        }
+
+        &-title{
+            color: #000;
+            font-family: Tinos;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            
+        }
+
+        &-description{
+            color: #000;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+
+        &-button{
+            @include reset-button;
+            color: #FFF;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            text-transform: uppercase;
+            letter-spacing: 0.8;
+            
+            max-width: 160px;
+            max-height: 47px;
+            
+            padding: 14px 19px;
+            background-color: #FF7400;
+            white-space: nowrap;
+        }
+    }
+}

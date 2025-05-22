@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <section class="header">
@@ -95,7 +99,7 @@
     <section class="history">
         <div class="history__inner container">
             <div class="history__body">
-                <h3 class="history__title">Наша <span class="history__title-break">История</span></h3>
+                <h3 class="history__title">Наша <span class="marked">История</span></h3>
                 <p class="history__description">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</p>
                 <div class="history__available">
                     <div class="history__available-dishes">
@@ -142,7 +146,7 @@
     <section class="dishes">
         <div class="dishes__inner container">
             <div class="dishes__title-wrapper">
-                <div class="dishes__title">Наши Блюда</div>
+                <div class="dishes__title">Наши <span class="marked">Блюда</span></div>
             </div>
             <div class="dishes__body">
                 <div class="dishes__bg">
@@ -176,8 +180,127 @@
             </div>
         </div>
     </section>
-
-
+    <sectoin class="menu">
+        <div class="menu__inner container">
+            <div class="menu__title-wrapper">
+                <div class="menu__title">Наше меню</div>
+            </div>
+            
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <div class="menu__item-image-food">
+                        <div class="menu__item-circle">
+                            <img src="/images/our-menu-burger.jpg" alt="" class="menu__item-photo">
+                        </div>
+                        <div class="menu__item-badge">420</div>
+                    </div>
+                    <h4 class="menu__item-title">Гамбургер макси</h4>
+                    <p class="menu__item-description">Максимально толстый 
+                        слой мяса</p>
+                        <button class="menu__item-button">ЗАКАЗАТЬ</button>
+                </li>
+                <li class="menu__item menu__hidden">
+                    <div class="menu__item-image-food">
+                        <div class="menu__item-circle">
+                            <img src="/images/our-menu-burger.jpg" alt="" class="menu__item-photo">
+                        </div>
+                        <div class="menu__item-badge">420</div>
+                    </div>
+                    
+                    <h4 class="menu__item-title">Гамбургер макси</h4>
+                    <p class="menu__item-description">Максимально толстый 
+                        слой мяса</p>
+                        <button class="menu__item-button">ЗАКАЗАТЬ</button>
+                </li>
+                <li class="menu__item menu__hidden">
+                    <div class="menu__item-image-food">
+                        <div class="menu__item-circle">
+                            <img src="/images/our-menu-burger.jpg" alt="" class="menu__item-photo">
+                        </div>
+                        <div class="menu__item-badge">420</div>
+                    </div>
+                    <h4 class="menu__item-title">Гамбургер макси</h4>
+                    <p class="menu__item-description">Максимально толстый слой мяса</p>
+                        <button class="menu__item-button">ЗАКАЗАТЬ</button>
+                </li>
+            </ul>
+        </div>
+    </sectoin>
+    <section class="review">
+        <div class="review__inner container">
+            <div class="review__slider single-item">
+                <div class="review__slide">
+                    <p class="review__text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+                    <div class="review__person-circle">
+                        <img src="./images/person.jpg" alt="" class="review__person-img">
+                    </div>
+                    
+                    <h4 class="review__client">Посетитель</h4>
+                    <p class="review__client-name">Николай</p>
+                </div>
+                <div class="review__slide">
+                    <p class="review__text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+                    <div class="review__person-circle">
+                        <img src="./images/person.jpg" alt="" class="review__person-img">
+                    </div>
+                    
+                    <h4 class="review__client">Посетитель</h4>
+                    <p class="review__client-name">Николай</p>
+                </div>
+                <div class="review__slide">
+                    <p class="review__text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+                    <div class="review__person-circle">
+                        <img src="./images/person.jpg" alt="" class="review__person-img">
+                    </div>
+                    
+                    <h4 class="review__client">Посетитель</h4>
+                    <p class="review__client-name">Николай</p>
+                </div>
+               
+            </div>
+            
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery__inner container">
+            <h2 class="gallery__title">Галерея <span class="marked">Блюд</span></h2>
+            <div class="gallery__grid">
+            
+                <div class="gallery__item1 gallery__big-item">
+                <img class='gallery__img1' src="./images/gallery/1.jpg" alt="Описание блюда" />
+                </div>
+                <div class="gallery__item2"><img class='gallery__img2' src="./images/gallery/2.jpg" alt="" /></div>
+                <div class="gallery__item3"><img class='gallery__img3' src="./images/gallery/3.png" alt="" /></div>
+                <div class="gallery__item4"><img class='gallery__img4' src="./images/gallery/2.jpg" alt="" /></div>
+                <div class="gallery__item5"><img class='gallery__img5' src="./images/gallery/3.png" alt="" /></div>
+                <div class="gallery__item6 gallery__big-item">
+                    <img class='gallery__img6' src="./images/gallery/1.jpg" alt="Описание блюда" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="chefs">
+        <div class="chefs__inner container">
+            <h4 class="chefs__title">
+                Наши <span class="marked">Повара</span>
+            </h4>
+            <div class="chefs__slider">
+                <div class="chefs__slide">
+                    <img src="./images/chefs/1.png" alt="" class="chefs__item">
+                    <img src="./images/chefs/2.png" alt="" class="chefs__item">
+                    <img src="./images/chefs/3.png" alt="" class="chefs__item">
+                </div>
+                <div class="chefs__slide low-hidden">
+                    <img src="./images/chefs/1.png" alt="" class="chefs__item">
+                    <img src="./images/chefs/2.png" alt="" class="chefs__item">
+                    <img src="./images/chefs/3.png" alt="" class="chefs__item">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer container">
+        <img src="/images/footer.png" alt="" class="footer__img">
+    </section>
     <dialog class="mobile-overlay desktop-hidden" id="mobileOverlay">
         <form class="mobile-overlay__close-button-wrapper" method="dialog">
             <button class="mobile-overlay__close-button cross-button" type="button">
@@ -221,5 +344,8 @@
             document.getElementById('mobileOverlay').showModal();
         });
     </script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

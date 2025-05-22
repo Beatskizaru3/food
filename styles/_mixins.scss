@@ -17,7 +17,7 @@
   @mixin fluid-width($max, $min, $min-vw: 320px, $max-vw: 1440px) {
     width: clamp(
       #{$min}px, 
-      #{$max / 1440 * 120}vw,
+      #{$max / 1200 * 120}vw,
       #{$max}px
     );
   }
